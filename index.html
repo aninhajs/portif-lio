@@ -18,7 +18,7 @@
     <!--  fimbootstrap incons -->
     <link rel="stylesheet" href="style.css">
     
-    <title>portifólio</title>
+    <title>portifólio</title> 
 </head>
 
 <body>
@@ -27,32 +27,57 @@
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img src="imagens/Gemini_Generated_Image_1pp2841pp2841pp2.jpeg" alt=" logo AJ"
-                        style="height: 100px; height: 100px; border-radius: 50px;"></a>
+                    <img src="imagens/aninha01.png" alt=" logo AJ"
+                        style="height: 100px; height: 100px; border-radius: 80px;"></a>
             </div><!-- "logo"  -->
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
 
-                    <li><a href="especialidades.html/especialidade.html">Especialidades</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
 
-                    <li><a href="#">Sobre </a></li>
+                    <li><a href="#sobre">Sobre </a></li>
 
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
 
+            <!-- Botão Menu Mobile -->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
             <div class="btn-contato">
-                <a href="#">
+                <a href="#contato">
                     <button>Contato</button>
                 </a>
             </div><!-- "btn-contato"  -->
+
+            <!-- Menu Mobile -->
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Overlay -->
+            <div class="overlay" id="overlay"></div>
+
         </div><!-- "interface"  -->
     </header>
 
     <main>
-        <section class="topo-site">
+        <section class="topo-site" id="inicio">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -63,22 +88,22 @@
                             onlaine dos seus sonhos.</P>
 
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#contato">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
                     </div><!--"txt-topo-site"   -->
 
                     <div class="img-topo-site">
-                        <img src="imagens/Gemini_Generated_Image_wyzorewyzorewyzo.jpeg"
-                            style="width: 300px; border: 2px solid #00ff08; border-radius: 150px;">
+                        <img src="imagens/aninha01.png"
+                            style="width: 300px; border: 2px solid #00ff08; border-radius: 200px;">
                     </div><!--img-topo-site  -->
                 </div><!--"flex"   -->
 
             </div><!--"interface"   -->
         </section><!--"topo-site"   -->
 
-        <section class="Especialidades">
+        <section class="Especialidades" id="especialidades">
             <div class="interfac">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -97,22 +122,60 @@
                             layout. </p>
                     </div><!--Especialidades-box -->
                     <div class="Especialidades-box">
-                        <i class="bi bi-filetype-html"></i>
+                        <i class="bi bi-filetype-js"></i>
                         <h3>javascript</h3>
                         <p>JavaScript é a linguagem de programação que traz vida às páginas web. Enquanto o HTML
                             estrutura o conteúdo e o CSS define a aparência, o JavaScript adiciona interatividade e
                             dinamismo. Com ele, você pode criar elementos que respondem a ações do usuário, como botões
                             que executam funções, formulários que validam dados, animações e muito mais.</p>
                     </div><!--Especialidades-box -->
+                    <div class="Especialidades-box">
+                        <i class="bi bi-arrow-repeat"></i>
+                        <h3>React</h3>
+                        <p>React é uma biblioteca JavaScript para construção de interfaces de usuário modernas e
+                            interativas. Com componentes reutilizáveis e gerenciamento eficiente de estado, o React
+                            permite criar aplicações web dinâmicas e responsivas com alta performance e experiência do
+                            usuário excepcional.</p>
+                    </div><!--Especialidades-box -->
+                    <div class="Especialidades-box">
+                        <i class="bi bi-palette"></i>
+                        <h3>Tailwind CSS</h3>
+                        <p>Tailwind CSS é um framework de utilitários que acelera o desenvolvimento de interfaces
+                            elegantes. Com classes pré-definidas e design system consistente, permite criar layouts
+                            responsivos e estilizados rapidamente, mantendo flexibilidade total para customizações
+                            únicas.</p>
+                    </div><!--Especialidades-box -->
+                    <div class="Especialidades-box">
+                        <i class="bi bi-server"></i>
+                        <h3>Node.js</h3>
+                        <p>Node.js é uma plataforma que permite executar JavaScript no servidor, possibilitando o
+                            desenvolvimento full-stack com uma única linguagem. Com alta performance e vasto ecossistema
+                            de pacotes, é ideal para construir APIs, serviços web e aplicações em tempo real.</p>
+                    </div><!--Especialidades-box -->
+                    <div class="Especialidades-box">
+                        <i class="bi bi-lightning"></i>
+                        <h3>Express</h3>
+                        <p>Express é um framework web minimalista e flexível para Node.js que simplifica a criação de
+                            APIs e aplicações web. Com roteamento intuitivo, middleware poderoso e arquitetura
+                            escalável, acelera o desenvolvimento de servidores robustos e eficientes.</p>
+                    </div><!--Especialidades-box -->
+                    <div class="Especialidades-box">
+                        <i class="bi bi-database"></i>
+                        <h3>PostgreSQL</h3>
+                        <p>PostgreSQL é um sistema de banco de dados relacional avançado e confiável, conhecido por sua
+                            robustez e conformidade com padrões SQL. Oferece recursos poderosos como transações ACID,
+                            consultas complexas e extensibilidade, sendo ideal para aplicações que exigem integridade e
+                            performance dos dados.</p>
+                    </div><!--Especialidades-box -->
                 </div><!--flex -->
             </div> <!--interfac -->
         </section><!-- Especialidades-->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="imagens/ajs.jpg" alt="" style="height: 500px; border-radius: 10px;">
+                        <img src="imagens/aninha01.png" alt="" style="height: 500px; border-radius: 10px;">
                     </div>
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER,<br> <span>SOU ANA JEIZE.</span></h2>
@@ -132,24 +195,24 @@
             </div><!--interface-->
         </section><!-- sobre-->
 
-        <section class="portifólio">
+        <section class="portifólio" id="projetos">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(imagens/padaria.webp);">
+                    <div class="img-port" style="background-image: url(imagens/pro02.jpg);">
                         <div class="overlay"> padaria</div>
                     </div>
-                    <div class="img-port" style="background-image: url(imagens/foto.jpg);">
+                    <div class="img-port" style="background-image: url(imagens/Screenshot_20251007-223648-697.png);">
                         <div class="overlay"> consutoria</div>
                     </div>
-                    <div class="img-port" style="background-image: url(imagens/confeitaria.jpg);">
+                    <div class="img-port" style="background-image: url(imagens/IMG_20250609_210919104_HDR.jpg);">
                         <div class="overlay">confeitaria</div>
                     </div>
                 </div> <!--flex  -->
             </div> <!--interface  -->
         </section><!--portifólio  -->
 
-        <section class="formulario">
+        <section class="formulario" id="contato">
             <h2 class="titulo">FALE <span>COMIGO.</span></h2>
             <div class="interface">
                 <form action="">
@@ -168,28 +231,90 @@
     </main>
 
     <footer>
-        <div class="interface">
-            <div class="line-footer">
-
-                <div class="flex">
-                    <div class="logo-footer">
-                        <img src="imagens/Gemini_Generated_Image_1pp2841pp2841pp2.jpeg" alt=""
-                            style="width: 100px; border: 2px solid #00ff08; border-radius: 50px;">
-                    </div> <!-- logo-footer -->
-                    <div class="btn-social">
-                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                        <a href="#"><button><i class="bi bi-github"></i></button></a>
-                    </div>><!-- btn-social -->
+        <div class="footer-gradient">
+            <div class="interface">
+                <div class="footer-content">
+                    <div class="footer-main">
+                        <div class="footer-logo">
+                            <img src="imagens/aninha01.png" alt="Ana Jeize">
+                            <h3>Ana Jeize</h3>
+                            <p>Desenvolvedora Full Stack</p>
+                        </div>
+                        
+                        <div class="footer-links">
+                            <h4>Navegação</h4>
+                            <ul>
+                                <li><a href="#inicio">Início</a></li>
+                                <li><a href="#especialidades">Especialidades</a></li>
+                                <li><a href="#sobre">Sobre</a></li>
+                                <li><a href="#projetos">Projetos</a></li>
+                                <li><a href="#contato">Contato</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-social">
+                            <h4>Redes Sociais</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="bi bi-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="https://github.com/aninhajs" class="social-link">
+                                    <i class="bi bi-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <div class="contact-info">
+                            <div class="email-container">
+                                <i class="bi bi-envelope"></i>
+                                <a href="mailto:anajeize27@gmail.com">anajeize27@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-bottom">
+                        <p>&copy; 2025 Ana Jeize. Todos os direitos reservados.</p>
+                        <p>Desenvolvido com ❤️ e muito café ☕</p>
+                    </div>
                 </div>
-            </div><!-- line-footer -->
-
-            <div class="line-footer borda">
-                <p><i class="bi bi-envelope"></i><a href="mailto:anajeize27@gmail.com">anajeize27@gmail.com</a></p>
             </div>
-        </div><!-- interface -->
-
+        </div>
     </footer>
 
+    <script>
+        // Elementos do menu mobile
+        const btnMenu = document.getElementById('btn-menu');
+        const menuMobile = document.getElementById('menu-mobile');
+        const overlay = document.getElementById('overlay');
+        const btnFechar = document.querySelector('.btn-fechar');
+        const linksMenu = document.querySelectorAll('.menu-mobile nav ul li a');
+
+        // Função para abrir menu
+        function abrirMenu() {
+            menuMobile.classList.add('abrir');
+            overlay.classList.add('ativo');
+        }
+
+        // Função para fechar menu
+        function fecharMenu() {
+            menuMobile.classList.remove('abrir');
+            overlay.classList.remove('ativo');
+        }
+
+        // Event listeners
+        btnMenu.addEventListener('click', abrirMenu);
+        btnFechar.addEventListener('click', fecharMenu);
+        overlay.addEventListener('click', fecharMenu);
+
+        // Fechar menu ao clicar em qualquer link
+        linksMenu.forEach(link => {
+            link.addEventListener('click', fecharMenu);
+        });
+    </script>
 
 </body>
 
